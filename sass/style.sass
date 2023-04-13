@@ -1,0 +1,65 @@
+@mixin wnpx($n)
+    .w#{$n}px
+        width: #{$n}px
+@mixin hnpx($n)
+    .h#{$n}px
+        height: #{$n}px
+
+$t1: #141d26
+$t2: #202c3d
+$t3: #243447
+$t-text1: #788a9e
+$t-text2: #1DA1F2
+
+html, body
+    height: 100%
+    color: white
+    font-size: 16px
+
+@include wnpx(35)
+@include wnpx(50)
+@include wnpx(70)
+@include wnpx(80)
+@include wnpx(100)
+// @include wnpx(500)
+@include hnpx(35)
+@include hnpx(50)
+
+p
+    margin: 0
+a
+    text-decoration: none
+    color: $t-text2
+.tbase
+    background-color: $t1
+.tbg
+    background-color: $t3
+.tBoxBg
+    background-color: $t2
+.text-lightText
+    color: $t-text1
+.text-blue
+    color: $t-text2
+.bt-line
+    border-bottom: 1px solid $t-text1
+.nav-search
+    background-color: transparent
+    border: none
+.nav-search:focus
+    outline: none
+
+.nav-link
+    color: $t-text1
+    font-size: 24px
+
+.nav-link:hover
+    border-bottom: 2px solid blue
+
+.post
+    border-bottom: 1px solid $t-text1
+
+.w-20
+    width: 20%
+
+.w-40
+    width: 40%
